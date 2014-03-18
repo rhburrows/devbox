@@ -1,0 +1,15 @@
+---
+- hosts: all
+  connection: local
+  sudo: true
+  vars:
+    task_path: tasks
+
+  tasks:
+    - include: "{{ task_path }}/git.yml"
+
+- hosts: all
+  connection: local
+  sudo: no
+  vars:
+    task_path: tasks
