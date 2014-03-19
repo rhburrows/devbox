@@ -4,12 +4,17 @@
   sudo: true
   vars:
     task_path: tasks
+    file_path: files
 
   tasks:
-    - include: "{{ task_path }}/git.yml"
+    - include: "{{ task_path }}/base.yml"
 
 - hosts: all
   connection: local
   sudo: no
   vars:
     task_path: tasks
+    file_path: files
+
+  tasks:
+    - include: "{{ task_path }}/configurations.yml"

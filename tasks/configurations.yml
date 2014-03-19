@@ -1,0 +1,3 @@
+---
+- name: Install spectrwm config
+  copy: src={{ file_path }}/spectrwm.conf dest=/home/rhburrows/.spectrwm.conf owner=rhburrows group=rhburrows mode=0644

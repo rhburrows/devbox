@@ -1,0 +1,7 @@
+---
+- name: install git
+  apt: pkg={{ item }} state=present
+  with_items:
+    - git
+    - xorg
+    - spectrwm

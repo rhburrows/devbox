@@ -61,9 +61,10 @@
     {
       "type": "ansible-local",
       "playbook_file": "dev_config.yml",
-      "playbook_paths": [ "tasks" ],
+      "playbook_paths": [ "tasks", "files" ],
       "extra_arguments": [
-        "--extra-vars task_path=playbooks/tasks"
+        "--extra-vars task_path=playbooks/tasks",
+        "--extra-vars file_path=playbooks/files"
       ]
     }
 
